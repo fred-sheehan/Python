@@ -123,3 +123,14 @@ bill_per_person = total_bill_with_tip / number_of_people
 final_amount = round(bill_per_person, 2)
 # Display the final amount
 print(f"Including the tip, each person should pay ${final_amount}")
+
+# version 2 - much more terse!
+print("\nWelcome to the tip calculator.")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill? "))
+bill_with_tip = tip / 100 * bill + bill
+bill_per_person = round(bill_with_tip / people, 2)
+# the following line ensures we always have 2 decimal places in our output format, even if theya re both 0
+bill_per_person = "{:.2f}".format(bill_per_person)
+print(f"Each person should pay: ${bill_per_person}")
