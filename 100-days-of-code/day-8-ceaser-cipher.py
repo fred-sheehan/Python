@@ -46,7 +46,6 @@ while use_cipher:
         except:
             print("Invalid input, please try again.")
             continue
-        if shift > 26:
-            shift = shift % 26
+        shift = shift % 26
 
         ceaser(cipher_direction = direction, start_text = text, shift_amount = shift)
