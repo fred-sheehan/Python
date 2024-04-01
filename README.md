@@ -1,4 +1,6 @@
 # Python
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffred-sheehan%2FPython.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffred-sheehan%2FPython?ref=badge_shield)
+
 
 100 Days of Python - course work from the App Brewery on Udemy.
 
@@ -15,3 +17,7 @@ The course uses the Auditorium platform, which is great, as there are also tests
 It does however, mean if you copy the code from there, it will not work natively in a terminal, as the platform is not set up in a standard way.
 
 I find also, that run natively, I get better debugging output than I do in the Auditorium platform, making it easier to understand what is going on. Once my code is working, I can then paste it back into the platform to check it is correct, and make sure it passes all the tests.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffred-sheehan%2FPython.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffred-sheehan%2FPython?ref=badge_large)
