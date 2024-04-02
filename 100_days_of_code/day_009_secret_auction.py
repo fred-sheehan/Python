@@ -1,5 +1,5 @@
 # Blind bid auction program
-from gavel_logo import logo
+from day_009_auction_gavel_logo import logo
 import os
 
 def clear():
