@@ -1,10 +1,9 @@
 # 100 Days of Python - course work from the App Brewery course on Udemy.
 
-The course examples use often use the online Auditorium platform to test your code, to make sure your code runs properly, and covers edge cases. This is great in some ways, as the instructor, Angela Yu, has already prepared test data for your code.
+The course examples often use the online Auditorium platform to test your written code, making sure your code runs properly, and covers edge cases. This is great in some ways, as the instructor, Angela Yu, has already prepared test data examples for your code to pass.
 
-It does however, mean that if you use the code as you would write it in auditorium locally in a terminal, it will fail as the auditorium platform code is not set that way, and the code is structured to only run there.
-
-Personally I find that run natively on my own system, I get better debugging output than I do in the Auditorium platform, making it easier to understand what is going on. Once my code is working, I can then paste it back into the platform to check it is correct, and make sure it passes all the tests.
+It does however mean that if you try and use the code as written for auditorium, locally in a terminal, it will fail!
+Personally I prefer to run code natively on my own system, an so the examples here have been changed from the examples the instructor gives, and will ask for any extra data as needed.
 
 Assuming you have a local Python environment set up on your own machine, all of the examples included here will run natively in a terminal:
 
