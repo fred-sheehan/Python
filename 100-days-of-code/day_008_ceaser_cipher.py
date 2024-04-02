@@ -35,6 +35,7 @@ while use_cipher:
 
     elif user_decision == "yes":
         direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+
         if direction not in ["encode", "decode"]:
             print("Invalid input, please try again.")
             continue
@@ -46,6 +47,7 @@ while use_cipher:
         except:
             print("Invalid input, please try again.")
             continue
+
         shift = shift % 26
 
         ceaser(cipher_direction = direction, start_text = text, shift_amount = shift)
