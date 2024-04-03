@@ -1,5 +1,5 @@
 # Calculator
-from day_10_calculator_logo import logo
+from day_010_calculator_logo import logo
 import os
 
 def clear():
@@ -24,7 +24,11 @@ operations = {
     "/": divide,
 }
 
+def end_now():
+    print("Thank you for trying the calculator. Goodbye!")
+
 clear()
+
 def calculator():
     print(logo)
 
@@ -40,11 +44,15 @@ def calculator():
         answer = calculation_function(num1, num2)
         print(f"{num1} {operation_symbol} {num2} = {answer}")
 
-        if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ") == 'y':
+        decide = input(f"Type 'y' to continue with {answer}, 'n' to start a new calculation, or 'e' to exit: ")
+        if decide == 'y':
             num1 = answer
-        else:
+        elif decide == 'n':
             should_continue = False
             clear()
             calculator()
+        else:
+            should_continue = False
+            end_now()
 
 calculator()
