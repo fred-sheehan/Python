@@ -1,6 +1,8 @@
+# simple number guessing game
 import random
 import os
 
+# clear the screen function
 def clear():
     os.system('cls||clear')
 
