@@ -2,8 +2,6 @@ from day_011_blackjack_logo import logo
 import random
 import os
 
-cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-
 def clear():
     os.system('cls||clear')
 
@@ -14,6 +12,7 @@ def exit_game():
     print("Thank you for playing, goodbye!")
 
 def deal_card():
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     return random.choice(cards)
 
 def calculate_score(cards_dealt):
@@ -70,7 +69,7 @@ def blackjack():
             user_score = calculate_score(user_cards)
             print(f"Your cards: {user_cards}, current score: {user_score}")
         else:
-            break
+             break
 
     while computer_score < 17:
         computer_cards.append(deal_card())
