@@ -1,7 +1,7 @@
 # Ascii art Hangman in Python
 
 from day_007_hangman_word_list import word_list
-import day_007_hangman_gallows_stages
+from day_007_hangman_gallows_stages import gallows_stages
 import random
 
 def new_game():
