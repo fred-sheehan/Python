@@ -12,7 +12,7 @@
 # deck of 4 full sets of cards. Working out the logic was a 'PITA'
 # Boy how I hate Pythons indentation rules... ;)
 
-from day_011_blackjack_logo import logo
+from blackjack_logo import logo
 import random
 import os
 

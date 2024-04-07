@@ -2,8 +2,8 @@
 # higher or lower than the previous one
 
 # import the game logos and data from the other files
-from day_014_game_higher_lower_art import logo, vs
-from day_014_game_higher_lower_data import data
+from higher_lower_game_art import logo, vs
+from higher_lower_game_data import data
 
 # import random module to pick random account from data, os module to
 # create clear the screen function, and time to create delays in code

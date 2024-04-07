@@ -1,4 +1,4 @@
-from day_011_blackjack_logo import logo
+from blackjack_logo import logo
 import random
 import os
 

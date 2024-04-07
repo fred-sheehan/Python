@@ -1,7 +1,7 @@
 # Coffee Machine Project
 
 # imports
-from day_015_coffee_machine_project_menu import MENU, resources
+from coffee_machine_project_menu import MENU, resources
 import time
 import os
 

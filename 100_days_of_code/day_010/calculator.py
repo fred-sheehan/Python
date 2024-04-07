@@ -1,5 +1,5 @@
 # Calculator
-from day_010_calculator_logo import logo
+from calculator_logo import logo
 import os
 
 def clear():
