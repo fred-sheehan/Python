@@ -9,7 +9,8 @@ money_machine = MoneyMachine()
 is_on = True
 
 while is_on:
-    choice = input(f"What would you like? ({menu.get_items()}): ")
+    options = menu.get_items()
+    choice = input(f"What would you like? ({options}): ")
     if choice == "off":
         is_on = False
         print("Turning Coffee Machine Off")
@@ -17,8 +18,6 @@ while is_on:
         coffee_maker.report()
         money_machine.report()
     else:
-        order = menu.find_drink(choice)
-        if order:
-            order = menu.find_drink(choice)
-            if coffee_maker.is_resource_sufficient(order) and money_machine.make_payment(order.cost):
-                    coffee_maker.make_coffee(order)
+        drink = menu.find_drink(choice)
+        if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
+                    coffee_maker.make_coffee(drink)
