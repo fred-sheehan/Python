@@ -2,7 +2,6 @@ from turtle import Turtle, Screen
 from random import random, randint
 from tkinter import messagebox
 
-
 screen = Screen()
 screen.setup(width=600, height=350)
 screen.bgcolor("black")
@@ -37,9 +36,9 @@ while is_race_on:
             is_race_on = False
 
             if winning_color == user_bet:
-                messagebox.showinfo(title="Race over!", message="You won! The " + winning_color + " turtle came first")
+                messagebox.showinfo(title="Race over!", message="You won! The " + winning_color + " turtle came first.")
             else:
-                messagebox.showinfo(title="Race over!", message="You Lost! The winning turtle was " + winning_color)
+                messagebox.showinfo(title="Race over!", message="You Lost! The winning turtle was the " + winning_color + " turtle.")
 
 
 screen.exitonclick()
