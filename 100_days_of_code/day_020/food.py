@@ -1,17 +1,19 @@
-from random import randint
+from turtle import Turtle
+import random
 
 
-class Food:
-
+class Food(Turtle):
 
     def __init__(self):
-        self.food = []
-        self.create_food()
+        super().__init__()
+        self.shape("circle")
+        self.penup()
+        self.shapesize(stretch_wid=0.5, stretch_len=0.5)
+        self.color("red")
+        self.speed(0)
 
-    def create_food(self):
-        x = randint(-280, 280)
-        y = randint(-280, 280)
-        self.food.append((x, y))
 
-    def get_food(self):
-        return self.food
+    def refresh(self):
+        random_x = random.randint(-280,280)
+        random_y = random.randint(-280, 280)
+        self.goto(random_x, random_y)
