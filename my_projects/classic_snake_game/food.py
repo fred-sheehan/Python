@@ -1,7 +1,6 @@
 from turtle import Turtle
 import random
 
-
 class Food(Turtle):
 
     def __init__(self):
@@ -11,7 +10,6 @@ class Food(Turtle):
         self.shapesize(stretch_wid=0.5, stretch_len=0.5)
         self.color("red")
         self.speed(0)
-
 
     def refresh(self):
         random_x = random.randint(-280,280)
