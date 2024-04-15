@@ -1,5 +1,8 @@
 ## notes for standalone pomodoro build
-make sure you have pyinstaller on your system
+
+The main.py file has been written to enable it to be built into a standalone app using pyinstaller. The programme uses the tkinter GUI programme, and the image and sound file in the folder with the main.py file, are included in the build process. I'm assuming you already have python 3 installed on your system.
+
+first, make sure you also have pyinstaller on your system
 
 ```bash
 pip3 install pyinstaller
