@@ -1,5 +1,4 @@
 # Python read from a file
-
 with open("/Users/fred/Desktop/my_file.txt") as file:
     content = file.read()
     print(content)
@@ -11,7 +10,6 @@ with open("/Users/fred/Desktop/new_file.txt", mode="w") as file:
     print(file)
 
 # Python append to a file instead of overwriting it!
-
 with open("my_file.txt", mode="a") as file:
     file.write("\n\nThat's much better, we kept our text, don't wipe it out, that's never best!")
     print(file)

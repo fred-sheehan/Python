@@ -57,8 +57,10 @@ print(list_of_numbers)
 result = [num for num in list_of_numbers if num%2 == 0]
 print(result)
 
-# Take a look inside file1.txt and file2.txt. They each contain a bunch of numbers, each number on a new line.
-# You are going to create a list called result which contains the numbers that are common in both files.
+# Take a look inside file1.txt and file2.txt. They each contain a bunch of
+# numbers, each number on a new line.
+# You are going to create a list called result which contains the numbers that
+# are common in both files.
 with open("file1.txt") as file1:
     list1 = file1.readlines()
 
@@ -81,7 +83,8 @@ print(students_scores)
 # new_dictionary = {new_key:new_value for (key, value) in dictionary.items()}
 
 # new_dict = {new_key:new_value for (key, value) in dictionary.items() if test}
-passed_students = {student:score for (student, score) in students_scores.items() if score >= 60}
+passed_students = {
+    student:score for (student, score) in students_scores.items() if score >= 60}
 print(passed_students)
 
 # create dictionary from input, split to words with character count
@@ -91,7 +94,10 @@ result = {word:len(word) for word in sentence.split()}
 print(result)
 
 # create new dictionary from weather_c dictionary converted to temperature in F
-weather_c = {"Monday": 12, "Tuesday": 14, "Wednesday": 15, "Thursday": 14, "Friday": 21, "Saturday": 22, "Sunday": 24}
+weather_c = {
+    "Monday": 12, "Tuesday": 14, "Wednesday": 15, "Thursday": 14, "Friday": 21,
+    "Saturday": 22, "Sunday": 24
+}
 print(weather_c)
 # To convert temp_c into temp_f use this formula:
 #(temp_c * 9/5) + 32 = temp_f

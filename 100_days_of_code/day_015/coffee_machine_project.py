@@ -1,25 +1,21 @@
 # Coffee Machine Project
 
-# imports
-from coffee_machine_project_menu import MENU, resources
 import time
 import os
 
-# import initial machine start up resources levels data
-resources = resources.copy()
+from coffee_machine_project_menu import MENU, resources
+resources = resources.copy() # initial resources levels data
 
-# clear screen function
 def clear():
     os.system('cls||clear')
 
-# print machine current resources levels
+# machine current resources levels
 def print_report():
     print(
         f"Current Machine Resources:\nWater: {resources['water']} ml\nMilk: {resources['milk']} ml\nCoffee: {resources['coffee']} g\nMoney: $ {resources['money']}"
     )
 
-# check if current machine resources are sufficient
-# to fulfill customers order
+# are current machine resources sufficient for order
 def check_resources(order):
     for item in MENU[order]['ingredients']:
         if resources[item] < MENU[order]['ingredients'][item]:

@@ -1,6 +1,7 @@
-from blackjack_logo import logo
 import random
 import os
+
+from blackjack_logo import logo
 
 
 def clear():

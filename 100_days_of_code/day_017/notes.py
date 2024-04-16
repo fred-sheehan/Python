@@ -2,6 +2,7 @@
 
 class User:
     print("New user being created...")
+
     def __init__(self, user_id, first_name, last_name):
         self.id = user_id
         self.first_name = first_name

@@ -1,7 +1,9 @@
-from playsound import playsound
-from tkinter import *
 import math
 import os
+import tkinter as tk
+
+from playsound import playsound
+
 
 # ----- CONSTANTS ----- #
 PINK = "#e2979c"
@@ -15,6 +17,7 @@ LONG_BREAK_MIN = 20
 reps = 0
 timer = None
 
+
 # ----- TIMER RESET ----- #
 def reset_timer():
     window.after_cancel(timer)
@@ -23,6 +26,7 @@ def reset_timer():
     check_marks.config(text="")
     global reps
     reps = 0
+
 
 # ----- TIMER MECHANISM ----- #
 def start_timer():
@@ -46,6 +50,7 @@ def start_timer():
         count_down(work_sec)
         title_label.config(text="Work", fg=GREEN)
 
+
 # ----- COUNTDOWN MECHANISM ----- #
 def count_down(count):
 
@@ -66,31 +71,36 @@ def count_down(count):
             marks += "✔"
         check_marks.config(text=marks)
 
+
 # ----- UI SETUP ----- #
-window = Tk()
+window = tk.Tk()
 window.title("Pomodoro")
 window.config(padx=100, pady=50, bg=YELLOW)
 
-title_label = Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50))
+title_label = tk.Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50))
 title_label.grid(column=1, row=0)
 
-canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
+canvas = tk.Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-tomato_img = PhotoImage(file=os.path.join(current_dir, "tomato.png"))
+tomato_img = tk.PhotoImage(file=os.path.join(current_dir, "tomato.png"))
 sound_file = os.path.join(current_dir, "timer.mp3")
 
 canvas.create_image(100, 112, image=tomato_img)
-timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
+timer_text = canvas.create_text(
+    100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
 
-start_button = Button(text="Start", font=(FONT_NAME, 20), fg="#32cd32", highlightthickness=0, command=start_timer)
+start_button = tk.Button(
+    text="Start", font=(FONT_NAME, 20), fg="#32cd32", highlightthickness=0, command=start_timer)
 start_button.grid(column=0, row=2)
 
-reset_button = Button(text="Reset", font=(FONT_NAME, 20), fg=RED, highlightthickness=0, command=reset_timer)
+reset_button = tk.Button(
+    text="Reset", font=(FONT_NAME, 20), fg=RED, highlightthickness=0, command=reset_timer)
 reset_button.grid(column=2, row=2)
 
-check_marks = Label(fg=GREEN, bg=YELLOW, font=(FONT_NAME, 35))
+check_marks = tk.Label(fg=GREEN, bg=YELLOW, font=(FONT_NAME, 35))
 check_marks.grid(column=1, row=3)
+
 
 window.mainloop()

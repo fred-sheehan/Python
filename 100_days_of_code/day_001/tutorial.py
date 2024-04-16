@@ -13,17 +13,13 @@ print()
 print("A 'single quote' inside a double quote")
 print('A "double quote" inside a single quote')
 print("Alternatively you can just \\\"escape\\\" the quote\n")
-
 print("Hello World!\nHello World!\nHello World!\n")
-
 print("Hello" + " " + "Fred\n")
 
 # Accepting input to be printed to the console
 # Accepts the input first, then prints the expected output!
 print("Hello " + input("What is your name? "))
-
 firstName = input("\nWhat is your first name? ")
 lastName = input("What is your last name? ")
-
 namesLength = len(firstName) + len(lastName)
 print("\nYour names together, contain " + str(namesLength) + " characters.\n")

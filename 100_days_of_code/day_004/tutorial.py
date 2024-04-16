@@ -35,9 +35,20 @@ else:
 
 fruits = ["Apple", "Banana", "Cherry", 256, 32, "Tomato"]
 
-american_states_today = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut", "Massachusetts", "Maryland", "South Carolina", "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island", "Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi", "Illinois", "Alabama", "Maine", "Missouri", "Arkansas", "Michigan", "Florida", "Texas", "Iowa", "Wisconsin", "California", "Minnesota", "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska", "Colorado", "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"]
+american_states_today = ["Delaware", "Pennsylvania", "New Jersey", "Georgia",
+    "Connecticut", "Massachusetts", "Maryland", "South Carolina",
+    "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island",
+    "Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana",
+    "Mississippi", "Illinois", "Alabama", "Maine", "Missouri", "Arkansas",
+    "Michigan", "Florida", "Texas", "Iowa", "Wisconsin", "California",
+    "Minnesota", "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska",
+    "Colorado", "North Dakota", "South Dakota", "Montana", "Washington",
+    "Idaho", "Wyoming", "Utah", "Oklahoma", "New Mexico", "Arizona", "Alaska",
+    "Hawaii"]
 
-american_states_original = ["Virginia", "South Carolina", "New York", "Rhode Island", "Connecticut", "Georgia", "New Hampshire", "Pennsylvania", "Massachusetts", "North Carolina", "New Jersey", "Delaware", "Maryland"]
+american_states_original = ["Virginia", "South Carolina", "New York",
+    "Rhode Island", "Connecticut", "Georgia", "New Hampshire", "Pennsylvania",
+    "Massachusetts", "North Carolina", "New Jersey", "Delaware", "Maryland"]
 
 # List Indexing can be from beginning, positive index, or from the end, negative index.
 american_states_today[0] # Delaware
@@ -67,7 +78,8 @@ print(f"{names[random_payer]} is going to buy the meal today!")
 
 
 # Nested Lists
-fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches",
+    "Cherries", "Pears"]
 vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 
 dirty_dozen = [fruits, vegetables]
@@ -111,7 +123,8 @@ if  position == 'C3':
 # 🚨 Don't change the code below 👇
 print(f"{line1}\n{line2}\n{line3}")
 
-# my (poor) code example above worked, and passed all tests, but the code below is far more efficient (and elegant)
+# my (poor) code example above worked, and passed all tests, but the code below
+# is far more efficient (and elegant)
 
 # Treasure Map 2
 line1 = ["⬜️","️⬜️","️⬜️"]

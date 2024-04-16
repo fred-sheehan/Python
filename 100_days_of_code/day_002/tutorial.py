@@ -50,7 +50,8 @@ print(121 // 4) # 30
 # Modulo - (only gives remainder)
 print(7 % 4) # 3
 
-# PEMDASLR or BODMASLR (Brackets(), Orders **, Division and Multiplication / * or * /, Addition and Subtraction + - or - +, Left-to-right decides tie))
+# PEMDASLR or BODMASLR (Brackets(), Orders **, Division and Multiplication
+# / * or * /, Addition and Subtraction + - or - +, Left-to-right decides tie))
 print(3 * 3 + 3 / 3 - 3) # 7.0
 print(3 * (3 + 3) / 3 - 3) # 3.0
 

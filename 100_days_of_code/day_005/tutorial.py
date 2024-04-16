@@ -61,7 +61,8 @@ print(evens_sum)
 # another way to do the same thing
 # dont forget to reset even_sum to 0
 evens_sum = 0
-# if we want to use the range() step function, for even numbers we have to start with 2 else we would the sum odd numbers in increments of 2!
+# if we want to use the range() step function, for even numbers we have to start
+# with 2 else we would the sum odd numbers in increments of 2!
 for number in range(2, target_num + 1, 2):
         evens_sum += number
 

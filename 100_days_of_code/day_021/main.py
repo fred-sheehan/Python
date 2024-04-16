@@ -1,9 +1,11 @@
 # Pong Game
+import time
+
 from turtle import Screen
 from scoreboard import Scoreboard
 from paddle import Paddle
 from ball import Ball
-import time
+
 
 screen = Screen()
 screen.setup(width=900, height=600)

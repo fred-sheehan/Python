@@ -1,6 +1,6 @@
 # Calculator
-from calculator_logo import logo
 import os
+from calculator_logo import logo
 
 def clear():
     os.system('cls||clear')

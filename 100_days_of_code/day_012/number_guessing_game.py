@@ -2,14 +2,14 @@
 import random
 import os
 
-# clear the screen function
+
 def clear():
     os.system('cls||clear')
+
 
 def guess_number():
     play_again = True
     random_number = random.randint(1, 101)
-    # clear the screen
     clear()
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
@@ -23,7 +23,6 @@ def guess_number():
     while play_again:
         if number_of_attempts > 0:
             print(f"You have {number_of_attempts} attempts remaining to guess the number.")
-
             guess = int(input("Make a guess: "))
 
             if guess == random_number:

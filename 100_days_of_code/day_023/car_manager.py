@@ -1,11 +1,14 @@
+import time
+import random
+
+from turtle import Turtle
+
+
+#CONSTANTS
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
 
-
-from turtle import Turtle
-import time
-import random
 
 class CarManager(Turtle):
 

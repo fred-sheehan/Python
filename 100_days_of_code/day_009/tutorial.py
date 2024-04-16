@@ -1,19 +1,20 @@
 # Python dictionaries
-# A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have key/value pairs.
+# A dictionary is a collection which is unordered, changeable and indexed.
+# In Python dictionaries are written with curly brackets,
+# and they have key/value pairs.
 
 # Create a dictionary
 programming_dictionary = {
     "Bug": "An error in a program that prevents the program from running as expected.",
-    "Function": "A piece of code that you can easily call over and over again.",
+    "Function": "A piece of code that you can easily call over and over again."
 }
 
 # Retrieve item value from dictionary by its key
-print(programming_dictionary["Bug"])
-# will return item: 'An error in a program that prevents the program from running as expected.'
+print(programming_dictionary["Bug"]) # 'An error in a program that prevents
+                                     # the program from running as expected.'
 
 # Add new items to dictionary - appends to end
 programming_dictionary["Loop"] = "The action of doing something over and over again"
-
 print(f"\n{programming_dictionary}")
 
 # Create an empty dictionary
@@ -29,7 +30,9 @@ programming_dictionary["While loop"] = "A loop that continues"
 print(f"\n{programming_dictionary}")
 
 # Edit, or update an item in a dictionary
-programming_dictionary.update({"While loop": "A loop that continues to run until a condition is met"})
+programming_dictionary.update({
+    "While loop": "A loop that continues to run until a condition is met"
+})
 print(f"\n{programming_dictionary}")
 
 # Loop through a dictionary and print all keys or value
@@ -57,7 +60,6 @@ for student in student_scores:
         student_grades[student] = "Acceptable"
     else:
         student_grades[student] = "Fail"
-
 print(student_grades)
 
 # Nesting
@@ -131,9 +133,9 @@ for country in fred_travel_log:
 
 # add a country to a travel log challenge
 # following slightly changed for local testing
-country = input("\nPlease enter a country: ") # Add country name
-visits = int(input("How many times have you visited? ")) # Number of visits
-list_of_cities = eval(input("Which cities did you visit? Please enter as a comma seperated list, i.e. 'Paris', 'Lille', etc: ")) # create list from formatted string
+country = input("\nPlease enter a country: ")
+visits = int(input("How many times have you visited? "))
+list_of_cities = eval(input("Which cities did you visit? Please enter as a comma seperated list, i.e. 'Paris', 'Lille', etc: "))
 
 travel_log = [
   {

@@ -1,20 +1,9 @@
 # Blackjack game
-# I spent way to long on this in the end and ended up using some
-# far more advanced code than I'm sure Angela had intended, but I'm
-# happy with the result. I learned a lot about classes and objects
-# in Python, and they certainly make for more concise code. Even
-# then this is way longer than needed to solve this challenge but I
-# wanted to add lots of features and so I had lots of tearing hair
-# out moments trying to get the logic right. It's not perfect as I
-# would have liked it to be, but it works OK and I'm happy with
-# it.... for now at least. It is a fairly complete game of
-# Blackjack, for more than 1 user at a time, and even shuffles the
-# deck of 4 full sets of cards. Working out the logic was a 'PITA'
-# Boy how I hate Pythons indentation rules... ;)
 
-from blackjack_logo import logo
 import random
 import os
+from blackjack_logo import logo
+
 
 def clear():
     os.system('cls||clear')
@@ -22,7 +11,9 @@ def clear():
 def show_logo():
     print(logo)
 
+
 class Player:
+
     def __init__(self, name):
         self.name = name
         self.hand = []
@@ -53,6 +44,7 @@ class Player:
                 else:
                     print(f"{self.name}'s hand: [{self.hand[0]}, ?]")
 
+
 def create_deck():
     deck = []
     for _ in range(4):
@@ -61,6 +53,7 @@ def create_deck():
         deck.extend([10]*12)
     random.shuffle(deck)
     return deck
+
 
 def check_winner(players, dealer):
     for player in players:
@@ -87,6 +80,7 @@ def check_winner(players, dealer):
 
     if dealer.score <= 21:
         print(f"Dealer's final score: {dealer.score}")
+
 
 def blackjack():
     deck = []

@@ -17,9 +17,11 @@ print(add(5, 6, 3, 93, 2)) # prints 109
 # key word arguments (kwargs)
 def calculate(**kwargs): # often written as **kwargs can be anything
     print(kwargs)
-calculate(add=3, multiply=5, divide=10) # prints {'add': 3, 'multiply': 5, 'divide': 10}
+calculate(add=3, multiply=5, divide=10)
+# prints {'add': 3, 'multiply': 5, 'divide': 10}
 
-# using kwargs in a class with the get method (to avoid errors if the key doesn't exist in the dictionary)
+# using kwargs in a class with the get method (to avoid errors if the key
+# doesn't exist in the dictionary)
 class Car:
     def __init__(self, **kw):
         self.make = kw.get('make')
@@ -32,19 +34,19 @@ my_car = Car(make='Toyota', year=2019, color='red')
 print(my_car.make) # prints Toyota
 print(my_car.model) # prints None rather than an error
 
-
 # TKinter GUI programming
-from tkinter import *
+import tkinter as tk
 
-window = Tk()
+window = tk.Tk()
 window.title("GUI is best")
 window.minsize(width=600, height=400)
 window.config(padx=50, pady=50)
 # Create a label
-my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
+my_label = tk.Label(text="I am a label", font=("Arial", 24, "bold"))
 my_label.grid(row=0, column=0)
 
-# change the text of the label directly or using the config method, last change will be the one displayed
+# change the text of the label directly or using the config method, last change
+# will be the one displayed
 # my_label['text'] = 'New Text'
 my_label.config(text='New Label Text', padx=50, pady=50)
 
@@ -53,16 +55,16 @@ def button_clicked():
     my_label.config(text=user_input)
 
 # Create a button displayed in the window
-my_button = Button(text='Click Me', command=button_clicked)
+my_button = tk.Button(text='Click Me', command=button_clicked)
 my_button.grid(row=2, column=2)
 
-my_2_button = Button(text='Click Me', command=button_clicked)
+my_2_button = tk.Button(text='Click Me', command=button_clicked)
 my_2_button.grid(row=0, column=3)
 
 #Entries
-entry = Entry(width=30)
+entry = tk.Entry(width=30)
 #Add some text to begin with
-entry.insert(END, string="Some text to begin with.")
+entry.insert(0, string="Some text to begin with.")
 #Gets text in entry, use entry.get() to get the text
 entry.grid(row=3, column=4)
 
