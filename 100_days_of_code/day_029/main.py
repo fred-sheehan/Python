@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 import random
 import pyperclip
 
@@ -25,10 +26,17 @@ def generate_password():
 
 # ----- SAVE PASSWORD ----- #
 def add_data():
-    with open("data.txt", "a") as file:
-        file.write(
-            f"{website_entry.get()} | {email_entry.get()} | {password_entry.get()}\n"
-        )
+
+    is_ok = messagebox.askokcancel(title="Confirmation", message=f"Do you want to save the entered data? \n\nWebsite: {website_entry.get()} \nEmail: {email_entry.get()} \nPassword: {password_entry.get()}")
+
+    if not is_ok:
+        return
+    else:
+        with open("data.txt", "a") as file:
+            file.write(
+                f"{website_entry.get()} | {email_entry.get()} | {password_entry.get()}\n"
+            )
+            messagebox.showinfo(title="Success", message="Data saved successfully!")
 
 # ----- UI SETUP ----- #
 window = tk.Tk()
