@@ -11,4 +11,7 @@ Python code snippets that I have wanted to keep for future reference, and to sav
 
 ## A folder for my own projects:
 
-This will be empty for now ;)
+Python projects that I have worked on, or am working on.
+There are several terminal applications that will need python installed to use, and a few apps that have been compiled into standalone executables that should work anywhere, without needing a local python environment.
+
+There are even a few games, most of which, once completed, will also be turned into standalone executables.
