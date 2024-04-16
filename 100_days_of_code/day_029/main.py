@@ -27,6 +27,10 @@ def generate_password():
 # ----- SAVE PASSWORD ----- #
 def add_data():
 
+    if len(website_entry.get()) == 0 or len(email_entry.get()) == 0 or len(password_entry.get()) == 0:
+        messagebox.showerror(title="Error", message="Please don't leave any fields empty!")
+        return
+
     is_ok = messagebox.askokcancel(title="Confirmation", message=f"Do you want to save the entered data? \n\nWebsite: {website_entry.get()} \nEmail: {email_entry.get()} \nPassword: {password_entry.get()}")
 
     if not is_ok:
