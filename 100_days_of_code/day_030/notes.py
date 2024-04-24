@@ -1,4 +1,4 @@
-Exceptions and Errors handling
+# Exceptions and Errors handling
 
 try:
     file = open('file.txt') # doesn't exist
